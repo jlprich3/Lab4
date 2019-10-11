@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Multiplication table
+    </title>
+  </head>
+  <body style="color: SlateBlue; background-color: PowderBlue;">
+    <heading style="color: Maroon">
+      Multiplication table (1-100)
+    </heading>
+    <table>
+
+<?php
+
+      echo "<tr>";
+      echo "<td>";
+      echo "</td>";
+      for($i = 1; $i < 101; $i++)
+      {
+        echo "<td>";
+        echo $i;
+        echo "</td>";
+      }
+      echo "</tr>";
+      for($i = 1; $i < 101; $i++)
+      {
+        echo "<tr>";
+        echo "<td>";
+        echo $i;
+        echo "</td>";
+        for($j = 1; $j < 101; $j++)
+        {
+          echo "<td>";
+          echo $i * $j;
+          echo "</td>";
+        }
+        echo "</tr>";
+      }
+?>
+
+    </table>
+  </body>
+</html>
