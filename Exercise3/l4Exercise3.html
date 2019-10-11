@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="l4Exercise3FormChecker.js"></script>
+    <title>
+      Web Store
+    </title>
+  </head>
+  <body style="color: SlateBlue; background-color: LightSteelBlue";>
+    <heading style="color: Maroon;">
+      Startup Food Court Store
+    </heading>
+    <br>
+    <br>
+    Please enter how many items of each type you would like to purchase:
+    <br>
+    <br>
+    <form action="l4Exercise3CustomerBackend.php" method="post">
+      <img src="HotDog.jpg"/>
+      <br>
+      Hot Dog Makers($250):
+      <input type="number" id="HDM" min="0" value="0" name="HDM" class="textbox"/>
+      <br>
+      <br>
+      <br>
+      <img src="Pretzel.jpg"/>
+      <br>
+      Pretzel Makers($200):
+      <input type="number" id="PZM" min="0" value="0" name="PZM" class="textbox"/>
+      <br>
+      <br>
+      <br>
+      <img src="Lemonade.jpg"/>
+      <br>
+      Lemonade Machines($25):
+      <input type="number" id="LAM" min="0" value="0" name="LAM" class="textbox"/>
+      <br>
+      <br>
+      <br>
+      Please select one of the following shipping options:
+      <br>
+      <input type="radio" name="ship" value="1"> 7 day Shipping (free) <br>
+      <input type="radio" name="ship" value="2"> 3 day Shipping ($5.00) <br>
+      <input type="radio" name="ship" value="3"> Overnight Shipping ($50.00) <br>
+      <br>
+      <br>
+      <br>
+      Please input your information:
+      <br>
+      Username:
+      <input type="text" name="username" id="username">
+      <br>
+      Password:
+      <input type="password" name="pw" id="pw">
+      <br>
+      <br>
+      <br>
+      <input type ="reset" value ="Reset" name ="reset">
+      <input type ="submit" value ="submit" name ="submit">
+    </form>
+  </body>
+</html>
